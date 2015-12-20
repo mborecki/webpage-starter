@@ -3,3 +3,5 @@ node_modules
 /app/js/bundle.js.map
 /app/css/bundle.css
 /app/js/bundle.js
+/app/page/assets/css/bundle.css
+/npm-debug.log

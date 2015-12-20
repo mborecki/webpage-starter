@@ -1,25 +1,28 @@
 {
-    "name": "webpack-sass-page-starter",
-    "homepage": "https://github.com/mborecki/webpack-sass-page-starter",
-    "author": {
-        "name": "MBorecki"
+  "name": "webpack-sass-page-starter",
+  "homepage": "https://github.com/mborecki/webpack-sass-page-starter",
+  "author": {
+    "name": "MBorecki"
+  },
+  "private": true,
+  "dependencies": {
+      "express": "^4.13.3"
     },
-    "private": true,
-    "dependencies": {},
-    "devDependencies": {
-        "babel-core": "^6.2.1",
-        "babel-loader": "^6.2.0",
-        "babel-preset-es2015": "^6.1.18",
-        "node-sass": "^3.4.2",
-        "node-watch": "^0.3.4",
-        "webpack": "latest"
-    },
-    "scripts": {
-        "webpack": "webpack",
-        "webpack-watch": "webpack --watch",
-        "sass": "node sass-builder.js",
-        "sass-watch": "node sass-builder.js --watch",
-        "build": "npm run webpack & npm run sass",
-        "watch": "npm run webpack-watch & npm run sass-watch"
-    }
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "node-sass": "^3.4.2",
+    "node-watch": "^0.3.4",
+    "webpack": "latest"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch",
+    "sass": "node ./scripts/sass-builder.js",
+    "sass-watch": "node ./scripts/sass-builder.js --watch",
+    "build": "npm run webpack && npm run sass &&  sh ./scripts/build.sh",
+    "watch": "npm run webpack-watch & npm run sass-watch",
+    "start-server": "node ./app/app.js"
+  }
 }

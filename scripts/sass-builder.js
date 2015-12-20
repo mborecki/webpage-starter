@@ -3,14 +3,14 @@ var watch = require('node-watch');
 var fs = require('fs');
 
 
-var INPUT_PATH = './app/css/';
-var INPUT_PATH_FILENAME = 'main.scss';
+var INPUT_PATH = './app/page/assets/css/';
+var INPUT_FILENAME = 'main.scss';
+var OUTPUT_PATH = INPUT_PATH;
 var OUTPUT_FILENAME = 'bundle.css';
-var OUTPUT_PATH = './app/css/';
 
 var render = function(){
     sass.render({
-        file: './app/css/main.scss',
+        file: INPUT_PATH + INPUT_FILENAME,
         outFile: OUTPUT_PATH + OUTPUT_FILENAME
     }, function(error, result){
         fs.writeFile(OUTPUT_PATH + OUTPUT_FILENAME, result.css, function(err){

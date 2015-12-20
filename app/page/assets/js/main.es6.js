@@ -12,4 +12,4 @@ class App {
     }
 }
 
-window.App = App;
+new App().start();
