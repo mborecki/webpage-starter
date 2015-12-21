@@ -5,3 +5,4 @@ node_modules
 /app/js/bundle.js
 /app/page/assets/css/bundle.css
 /npm-debug.log
+/build
