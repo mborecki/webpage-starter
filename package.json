@@ -24,6 +24,7 @@
     "sass-watch": "node ./scripts/sass-builder.js --watch",
     "build": "npm run webpack && npm run sass &&  sh ./scripts/build.sh",
     "watch": "npm run webpack-watch & npm run sass-watch",
-    "start-server": "node ./app/app.js"
+    "server-start": "node ./app/app.js",
+    "server-watch": "sh ./scripts/server-watch.sh"
   }
 }

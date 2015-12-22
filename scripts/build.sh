@@ -7,14 +7,8 @@ fi
 # main directory
 mkdir build
 
-# start file
-cp ./app/app.js ./build
-
-# api
-cp -R ./app/api ./build/api
-
-# page
-cp -R ./app/page ./build/page
+# copy files
+cp -R ./app/* ./build
 
 # clear source files
 find ./build -type f -name *.scss | xargs rm
